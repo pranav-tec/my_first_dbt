@@ -1,0 +1,1 @@
+select * from naga.pranav.customers
