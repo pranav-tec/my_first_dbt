@@ -1,1 +1,1 @@
-select * from naga.pranav.customers
+select * from naga.pranav.customer
