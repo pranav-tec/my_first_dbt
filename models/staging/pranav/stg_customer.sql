@@ -5,6 +5,6 @@ with customers as (
         first_name,
         last_name
 
-    from naga.pranav.customers
+    from {{ source('pranav', 'customers') }}
 
 )select * from customers

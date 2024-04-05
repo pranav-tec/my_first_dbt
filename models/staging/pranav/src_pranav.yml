@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: pranav
+    database: naga
+    schema: pranav
+    tables:
+      - name: customers
+      - name: orders
