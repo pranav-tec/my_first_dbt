@@ -6,6 +6,6 @@ with orders as (
         order_date,
         status
 
-    from naga.pranav.orders
+    from {{ source('pranav', 'orders') }}
 
 )select * from orders
