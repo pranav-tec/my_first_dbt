@@ -6,3 +6,10 @@ sources:
     tables:
       - name: customers
       - name: orders
+        loaded_at_field: _ETL_LOADED_AT
+        freshness:
+          warn_after: {count: 4,period: day}
+          error_after: {count: 6,period: day}
+
+            
+        

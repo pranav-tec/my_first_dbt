@@ -39,7 +39,20 @@ models:
   demo_dbt:
     # Applies to all files under models/example/
     staging:
+      schema: DBT_NCHAKILAM
+      database: NAGA
       +materialized: table
+
     marts:
-      +materialized: table
+      core:
+        schema: DBT_PRANAV
+        database: DEMO
+        +materialized: table
+
+      intermediate:
+        schema: PRANAV
+        database: NAGA
+        +materialized: table
+        
+
 
